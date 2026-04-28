@@ -24,13 +24,13 @@ repository               : "xfwang-qut/xfwang-qut.github.io"
 author:
   # Biographic information
   avatar           : "1.jpg"
-  name             : "Your Sidebar Name"
+  name             : "Xingfa Wang"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "Master student at Qingdao University of Technology. My research focuses on underwater image understanding, instance segmentation, and dense prediction."
+  location         : "Qingdao, China"
+  employer         : "Qingdao University of Technology"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "xfwang_qut@163.com" 
 
   # Academic websites
   academia         : # URL
@@ -38,7 +38,7 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "https://orcid.org/yourorcidurl"
+  orcid            : "https://orcid.org/0009-0003-5698-7297"
   semantic         : # URL
   ssrn             : # URL
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
@@ -51,7 +51,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : "xfwang-qut"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
