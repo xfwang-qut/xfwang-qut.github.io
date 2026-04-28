@@ -23,7 +23,7 @@ repository               : "xfwang-qut/xfwang-qut.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "1.jpg"
+  avatar           : "images/1.jpg"
   name             : "Your Sidebar Name"
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
