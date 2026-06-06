@@ -7,59 +7,148 @@
   <meta name="description" content="Personal academic homepage of Xingfa Wang." />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
   <header class="site-header">
     <nav class="nav container" aria-label="Main navigation">
       <button class="menu-button" id="menuButton" aria-label="Open navigation" aria-expanded="false">☰</button>
+
       <div class="nav-links" id="navLinks">
-        <a class="active" href="index.html">Homepage</a>
-        <a href="publications.html">Publications</a>
-        <a href="blog.html">Blog Posts</a>
+        <a class="active" href="#home">Homepage</a>
+        <a href="#publications">Publications</a>
+        <a href="#blog">Blog Posts</a>
       </div>
     </nav>
   </header>
 
-  <main class="container layout">
+  <main id="home" class="container layout">
     <aside class="profile-card">
       <img class="avatar" src="assets/img/1.jpg" alt="Xingfa Wang avatar" />
+
       <h1>Xingfa Wang</h1>
-      <p class="muted">Graduate student at Qingdao University of Technology.</p>
-      <p>My research focuses on underwater image understanding, instance segmentation, and dense prediction.</p>
+
+      <p class="muted">
+        Master's student at Qingdao University of Technology.
+      </p>
+
+      <p>
+        My research focuses on underwater image understanding, instance segmentation,
+        semantic segmentation, object detection, and dense image prediction.
+      </p>
+
       <ul class="contact-list">
         <li><span>📍</span> Qingdao, China</li>
         <li><span>🏫</span> Qingdao University of Technology</li>
-        <li><span>✉️</span> <a href="mailto:xfwang_qut@163.com">Email</a></li>
-        <li><span>🎓</span> <a href="你的GoogleScholar链接" target="_blank">Google Scholar</a></li>
-        <li><span>🟢</span> <a href="https://orcid.org/0009-0003-5698-7297" target="_blank">ORCID</a></li>
-        <li><span>🔗</span> <a href="https://github.com/xfwang-qut">GitHub</a></li>
+        <li><span>✉️</span> <a href="mailto:your.email@example.com">Email</a></li>
+        <li><span>🔗</span> <a href="https://github.com/xfwang-qut" target="_blank">GitHub</a></li>
+        <li><span>🎓</span> <a href="https://scholar.google.com/" target="_blank">Google Scholar</a></li>
+        <li><span>🟢</span> <a href="https://orcid.org/" target="_blank">ORCID</a></li>
       </ul>
     </aside>
 
     <section class="content">
       <h2>About Me</h2>
+
       <p>
-        I am interested in computer vision for underwater environments, especially robust dense image prediction under complex degradation, scattering, noise, and frequency aliasing. My current work explores frequency-aware downsampling, underwater instance segmentation, and efficient visual perception models.
+        I am a master's student at Qingdao University of Technology. My research interests
+        include underwater image understanding, dense image prediction, instance segmentation,
+        semantic segmentation, and object detection.
+      </p>
+
+      <p>
+        My current work focuses on robust visual perception under complex underwater
+        degradation, including scattering, noise, color distortion, and frequency aliasing.
+        I am particularly interested in frequency-aware learning, adaptive downsampling,
+        and efficient vision models for underwater environments.
       </p>
 
       <h2>Research Interests</h2>
+
       <div class="tag-list">
         <span>Underwater Image Understanding</span>
+        <span>Dense Image Prediction</span>
         <span>Instance Segmentation</span>
         <span>Semantic Segmentation</span>
         <span>Object Detection</span>
         <span>Frequency-aware Learning</span>
+        <span>Efficient Vision Models</span>
       </div>
 
       <h2>News</h2>
+
       <ul class="timeline">
-        <li><strong>2026</strong> — This clean personal homepage was created.</li>
+        <li><strong>2026</strong> — My personal academic homepage was launched.</li>
         <li><strong>2025</strong> — Working on frequency-spatial adaptive downsampling for underwater dense image prediction.</li>
+        <li><strong>2025</strong> — Research focuses on underwater image understanding and dense prediction.</li>
       </ul>
     </section>
   </main>
 
+  <section id="publications" class="container page-section">
+    <h2>Publications</h2>
+
+    <div class="pub-item">
+      <h3>Frequency-Spatial Adaptive Downsampling for Underwater Dense Image Prediction</h3>
+
+      <p>
+        <strong>Xingfa Wang</strong>, ...
+      </p>
+
+      <p>
+        <em>Under Review</em>, 2026.
+      </p>
+
+      <p>
+        This work studies frequency-aware and spatial-adaptive downsampling for robust
+        underwater dense image prediction, including object detection, instance segmentation,
+        and semantic segmentation.
+      </p>
+    </div>
+
+    <div class="pub-item">
+      <h3>Hybrid SAM for Underwater Instance Segmentation</h3>
+
+      <p>
+        <strong>Xingfa Wang</strong>, ...
+      </p>
+
+      <p>
+        <em>Under Review</em>, 2025.
+      </p>
+
+      <p>
+        This work explores efficient adaptation of foundation segmentation models for
+        underwater instance segmentation.
+      </p>
+    </div>
+  </section>
+
+  <section id="blog" class="container page-section">
+    <h2>Blog Posts</h2>
+
+    <div class="post-item">
+      <h3>Notes on Underwater Image Understanding</h3>
+
+      <p>
+        Reading notes and research summaries on underwater computer vision, including
+        image degradation, object detection, instance segmentation, and dense prediction.
+      </p>
+    </div>
+
+    <div class="post-item">
+      <h3>Frequency-aware Learning for Dense Prediction</h3>
+
+      <p>
+        Notes on frequency aliasing, downsampling, Fourier-domain analysis, and dense
+        prediction models.
+      </p>
+    </div>
+  </section>
+
   <footer class="footer">
-    <div class="container">© <span id="year"></span> Xingfa Wang. Powered by GitHub Pages.</div>
+    <div class="container">
+      © <span id="year"></span> Xingfa Wang. Powered by GitHub Pages.
+    </div>
   </footer>
 
   <script src="assets/js/main.js"></script>
