@@ -263,8 +263,11 @@ a:hover {
 
   .profile-card {
     position: static;
+    width: auto;
   }
-
+  .content {
+    margin-left: 0;
+  }
   .avatar {
     width: 140px;
     height: 140px;
