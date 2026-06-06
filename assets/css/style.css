@@ -296,3 +296,26 @@ a:hover {
     font-size: 32px;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
+.nav {
+  justify-content: center;
+}
+
+.page-section {
+  padding: 64px 0;
+  border-top: 1px solid #e5e7eb;
+  scroll-margin-top: 90px;
+}
+
+.pub-item,
+.post-item {
+  margin-bottom: 28px;
+}
+
+.pub-item h3,
+.post-item h3 {
+  margin-bottom: 8px;
+}
