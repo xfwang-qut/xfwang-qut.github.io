@@ -92,13 +92,11 @@ a:hover {
   border-radius: 2px;
 }
 
-/* Main two-column layout */
+/* Main layout */
 
 .layout {
-  display: grid;
-  grid-template-columns: 300px minmax(0, 1fr);
-  gap: 48px;
-  align-items: start;
+  display: block;
+  position: relative;
   padding-top: 54px;
   padding-bottom: 64px;
 }
@@ -114,7 +112,10 @@ a:hover {
 
   position: fixed;
   top: 82px;
-  align-self: start;
+  left: max(24px, calc((100vw - var(--container)) / 2 + 24px));
+  width: 300px;
+  max-height: calc(100vh - 110px);
+  overflow-y: auto;
 }
 
 .avatar {
@@ -142,6 +143,8 @@ a:hover {
   color: var(--muted);
 }
 
+/* Contact list */
+
 .contact-list {
   list-style: none;
   padding: 0;
@@ -161,11 +164,17 @@ a:hover {
   text-align: center;
 }
 
+.icon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 /* Right content */
 
 .content {
   min-width: 0;
-  width: 100%;
   margin-left: 348px;
   overflow: visible;
 }
@@ -193,7 +202,7 @@ a:hover {
   margin: 0 0 16px;
 }
 
-/* Tags */
+/* Research tags */
 
 .tag-list {
   display: flex;
@@ -223,7 +232,7 @@ a:hover {
   margin: 8px 0;
 }
 
-/* Publications and blog */
+/* Publications and Blog */
 
 .pub-item,
 .post-item {
@@ -256,18 +265,22 @@ a:hover {
 
 @media (max-width: 860px) {
   .layout {
-    grid-template-columns: 1fr;
-    gap: 36px;
+    display: block;
     padding-top: 34px;
   }
 
   .profile-card {
     position: static;
     width: auto;
+    max-height: none;
+    overflow-y: visible;
+    margin-bottom: 36px;
   }
+
   .content {
     margin-left: 0;
   }
+
   .avatar {
     width: 140px;
     height: 140px;
@@ -304,10 +317,4 @@ a:hover {
     font-size: 13px;
     padding: 7px 12px;
   }
-}
-.icon {
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: middle;
 }
