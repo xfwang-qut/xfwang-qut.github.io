@@ -45,6 +45,8 @@ a:hover {
   padding: 0 24px;
 }
 
+/* Header */
+
 .site-header {
   position: sticky;
   top: 0;
@@ -64,7 +66,7 @@ a:hover {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 34px;
 }
 
 .nav-links a {
@@ -90,23 +92,18 @@ a:hover {
   border-radius: 2px;
 }
 
-.menu-button {
-  display: none;
-  border: none;
-  background: transparent;
-  font-size: 24px;
-  cursor: pointer;
-  color: var(--text);
-}
+/* Main two-column layout */
 
 .layout {
   display: grid;
   grid-template-columns: 300px minmax(0, 1fr);
   gap: 48px;
+  align-items: start;
   padding-top: 54px;
   padding-bottom: 64px;
-  align-items: start;
 }
+
+/* Left fixed profile card */
 
 .profile-card {
   background: var(--card-bg);
@@ -114,8 +111,10 @@ a:hover {
   border-radius: 22px;
   padding: 30px 28px;
   box-shadow: var(--shadow);
+
   position: sticky;
-  top: 90px;
+  top: 82px;
+  align-self: start;
 }
 
 .avatar {
@@ -132,6 +131,7 @@ a:hover {
   margin: 0 0 12px;
   font-size: 30px;
   line-height: 1.2;
+  letter-spacing: -0.02em;
 }
 
 .profile-card p {
@@ -161,8 +161,12 @@ a:hover {
   text-align: center;
 }
 
+/* Right content */
+
 .content {
   min-width: 0;
+  width: 100%;
+  overflow: visible;
 }
 
 .content-section {
@@ -181,11 +185,14 @@ a:hover {
   margin: 0 0 18px;
   font-size: 30px;
   line-height: 1.25;
+  letter-spacing: -0.03em;
 }
 
 .content-section p {
   margin: 0 0 16px;
 }
+
+/* Tags */
 
 .tag-list {
   display: flex;
@@ -204,6 +211,8 @@ a:hover {
   font-weight: 600;
 }
 
+/* News */
+
 .timeline {
   margin: 0;
   padding-left: 22px;
@@ -212,6 +221,8 @@ a:hover {
 .timeline li {
   margin: 8px 0;
 }
+
+/* Publications and blog */
 
 .pub-item,
 .post-item {
@@ -230,6 +241,8 @@ a:hover {
   margin: 8px 0;
 }
 
+/* Footer */
+
 .footer {
   border-top: 1px solid var(--border);
   color: var(--muted);
@@ -238,37 +251,9 @@ a:hover {
   text-align: center;
 }
 
+/* Mobile */
+
 @media (max-width: 860px) {
-  .nav {
-    justify-content: space-between;
-  }
-
-  .menu-button {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 58px;
-    flex-direction: column;
-    gap: 0;
-    background: #ffffff;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .nav-links.open {
-    display: flex;
-  }
-
-  .nav-links a {
-    width: 100%;
-    padding: 14px 24px;
-    text-align: center;
-  }
-
   .layout {
     grid-template-columns: 1fr;
     gap: 36px;
@@ -290,6 +275,10 @@ a:hover {
 
   .content-section h2 {
     font-size: 26px;
+  }
+
+  .nav-links {
+    gap: 22px;
   }
 }
 
